@@ -4,7 +4,7 @@ import redis
 from flask import Flask
 
 app = Flask(__name__)
-connect_to_redis = redis.Redis(host='172.17.0.3', port=6379)
+connect_to_redis = redis.Redis(host='redis', port=6379)
 
 
 def za_count():
